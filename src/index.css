@@ -14,7 +14,7 @@ body {
     background-image: url(/src/assets/bg-desktop.svg);
     background-repeat: no-repeat;
     background-color: var(--Violet);
-    background-position: left center;
+    background-position: top 90% left 25%;
 }
 main {
     padding: 2rem 0;
@@ -37,7 +37,7 @@ main {
     padding: 2.9rem 2rem 0 3.2rem;
 }
 .text h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: 'Poppins', sans-serif;
     color: var(--White);
     padding-bottom: 1.2rem;
@@ -47,7 +47,8 @@ main {
 }
 .text p {
     font-family: 'Open Sans', sans-serif;
-    font-size: .8rem;
+    font-size: 1rem;
+    width: 460px;
     line-height: 1.35rem;
     color: var(--White);
 } 
@@ -95,6 +96,22 @@ main {
     font-weight: 600;
     margin-left: .2rem; 
 }
+@media (max-width: 1032px) {
+    .main_image {
+        width: 360px;
+    }
+    .text {
+        padding: 1rem 3rem;
+    }
+    .text h1 {
+        font-size: 1.1rem;
+    }
+    .text p {
+        width: 300px;
+        font-size: .63rem;
+        line-height: 1.1rem;
+    }
+}
 @media (max-width: 759px) {
     body {
         background-image: url(./assets/bg-mobile.svg);
@@ -119,7 +136,7 @@ main {
         align-items: center;
     }
     .text p {
-        max-width: 190px;
+        width: 195px;
         text-align: center;
     }
     #registerBtn {
@@ -137,21 +154,7 @@ main {
         max-width: 760px;
     }
 }
-@media (max-width: 1032px) {
-    .main_image {
-        width: 360px;
-    }
-    .text {
-        padding: 1rem 3rem;
-    }
-    .text h1 {
-        font-size: 1.1rem;
-    }
-    .text p {
-        font-size: .63rem;
-        line-height: 1.1rem;
-    }
-}
+
 @media (min-width: 1033px) {
     .container {
         max-width: 1033px;
